@@ -1,154 +1,116 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephen-Adegbile</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <style>
-        section {
-            padding: 60px 0;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Stephen Adegbile</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!--  CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-    <!-- navbar -->
+    <!-- ======= Mobile nav toggle button ======= -->
+    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark pt-5 pb-4">
         <div class="container-xxl">
             <!-- navbar brand / title -->
-            <a class="navbar-brand" href="#intro">
+            <a class="navbar-brand" href="#hero">
                 <span class="text-light fw-bold">
                     <i class="bi bi-code-square"></i>
           Stephen Adegbile
         </span>
             </a>
             <!-- toggle button for mobile nav -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler btn-outline-primaryt" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
             <!-- navbar links -->
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#topics">Interests</a>
+                    <li class="nav-item scrollto">
+                        <a class="nav-link text-light" href="#facts">Interests</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#reviews">About Me</a>
+                        <a class="nav-link text-light" href="#about">About Me</a>
                     </li>
 
-                    <li class="nav-item d-md-none">
-                        <a class="nav-link text-light" href="#pricing">Projects</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#sidebar" data-bs-toggle="offcanvas" aria-controls="sidebar">
+                             Contact Me
+                        </a>
                     </li>
                     <li class="nav-item ms-2 d-none d-md-inline">
-                        <a class="btn btn-outline-primary" href="#pricing">Projects</a>
+                        <a class="btn btn-outline-light" href="#portfolio">Projects</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- End Header -->
 
-    <!-- main image & intro text -->
-    <br><br><br>
-    <section id="intro">
-        <div class="container-lg">
-            <div class="row g-4 justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2">Stephen</div>
-                        <div class="display-5 text-muted">Full Stack Engineer</div>
-                    </h1>
-                    <p class="lead my-4 text-muted">One of the most captivating aspects of a Full Stack Engineer's journey is their relentless pursuit of knowledge. Driven by curiosity and a passion for continuous learning, they thrive in an ever-changing environment, embracing new
-                        technologies and methodologies with enthusiasm. Their thirst for knowledge fuels their ability to stay ahead of the curve, adapting swiftly to the emerging trends in the tech world</p>
-                    <a href="#pricing" class="btn btn-outline-primary btn-lg">Projects</a>
-                    <!-- open sidebar / offcanvas -->
-                    <a style="text-decoration:none" href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
-                        <i class="bi bi-person-lines-fill"></i> Contact Me
-                    </a>
-                </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <!-- tooltip -->
-                    <span class="tt" data-bs-placement="bottom" title="A smile a day keeps negativity at bay">
-            <img  src="https://media.licdn.com/dms/image/C5603AQGlIQOlCy-zKQ/profile-displayphoto-shrink_800_800/0/1586964376039?e=1695859200&v=beta&t=84fPnmMK7qkHLnFLwEjZbN1_thlUqHnEJnCkKiz8DZE" class="img-fluid" alt="ebook">
-          </span>
-                </div>
-            </div>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+        <div class="container " data-aos="zoom-in" data-aos-delay="70">
+            <h1 style="text-align:center">Stephen </h1>
+            <br>
+            <p style="text-align:center"> <span class="typed" data-typed-items="Full Stack Software Developer"></span></p>
+
         </div>
     </section>
+    <!-- End Hero -->
 
-    <!-- pricing plans -->
-    <section id="pricing" class=" bg-dark  border-primary">
-        <div class="container  border border-left-4 border-secondary rounded text-center bg-muted m5">
-            <div class="text-center text-light">
-                <p>
-                    <h1>Projects </h1>
-                </p>
-                <p class=" lead text-muted ">Check out some of my work</p>
+    <main id="main">
+
+
+
+        <!-- ======= Interests Section ======= -->
+        <br><br>
+        <section id="facts" class="facts">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Interests</h2>
+                    <p>A quick glance at some of the fields and technologies that interest me</p>
+                </div>
+
             </div>
 
-            <div class="row g-0 align-items-center justify-content-between">
-                <div class="col ">
 
-                    <span class="tt" data-bs-placement="bottom" title="Landing page for a game store">
-                    <a class="text-light" style="text-decoration:none" target="_blank" href="https://stephen0111.github.io/Product_Landing_page/">
-                        <h3><i class="bi bi-journal-code "></i> Game Store</h3>
-                    </a></span>
-
-                </div>
-                <div class="col ">
-                    <span class="tt" data-bs-placement="bottom" title="Quantum Computing">
-                    <a class="text-light" style="text-decoration:none" target="_blank" href="https://stephen0111.github.io/technicaldocumentationpage/">
-                        <h3> <i class="bi bi-journal-code "></i> Documentation Page</h3>
-                    </a></span>
-
-                </div>
-                <div class="col ">
-                    <span class="tt" data-bs-placement="bottom" title="A survey page">
-                    <a class="text-light" style="text-decoration:none" target="_blank" href="https://stephen0111.github.io/surveyform/">
-                        <h3><i class="bi bi-journal-code "></i> Survey Form</h3>
-                    </a></span>
-
-                </div>
-                <div class="col ">
-                    <span class="tt" data-bs-placement="bottom" title="Alan Turing tribute page">
-                    <a class="text-light" style="text-decoration:none" target="_blank" href=" https://stephen0111.github.io/alanturing/">
-                        <h3> <i class="bi bi-journal-code "></i> Tribute Page</h3>
-                    </a></span>
-
-                </div>
-            </div>
-            <!-- end container -->
-    </section>
-
-    <!-- topics at a glance -->
-    <section id="topics">
-        <div class="container-md">
-            <div class="text-center">
-                <h2>Interests and Passion</h2>
-                <p class="lead text-muted ">A quick glance at some of the fields I'm passionate about</p>
-            </div>
-            <div class="row my-5 g-5 justify-content-around align-items-center ">
-                <div class="col-6 col-lg-4 ">
-                    <img src="https://img.freepik.com/free-photo/front-view-desk-with-computer-screen-clipboard_23-2148821877.jpg?w=1800&t=st=1690503972~exp=1690504572~hmac=32881cbf0829d45da83ddd3fd378b3945549944bca35d87532b006e8318fdf27 " class="img-fluid
-                " alt="ebook ">
-                </div>
-
-
-                <!-- accordion -->
-                <div class="col-lg-7">
+            <!-- accordion -->
+            <div class="row my-5 g-5 justify-content-around align-items-center " data-aos="fade-up">
+                <div class="col-lg-9">
 
                     <!-- accordion -->
                     <div class="accordion" id="chapters">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
-                      Internet Of Things
-                    </button>
+      Internet Of Things
+    </button>
                             </h2>
                             <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
                                 <div class="accordion-body">
@@ -164,8 +126,8 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
-                      Quantum Computing
-                    </button>
+      Quantum Computing
+    </button>
                             </h2>
                             <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
                                 <div class="accordion-body">
@@ -182,8 +144,8 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-1">
-                      Cloud Computing
-                    </button>
+      Cloud Computing
+    </button>
                             </h2>
                             <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
                                 <div class="accordion-body">
@@ -198,8 +160,8 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
-                      Artificial Intelligence
-                    </button>
+      Artificial Intelligence
+    </button>
                             </h2>
                             <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
                                 <div class="accordion-body">
@@ -216,8 +178,8 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5">
-                      Cyber Security
-                    </button>
+      Cyber Security
+    </button>
                             </h2>
                             <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
                                 <div class="accordion-body">
@@ -234,109 +196,291 @@
 
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- reviews list -->
-
-
-    <!-- reviews list -->
-    <section id="reviews" class="bg-light ">
-        <div class="container-lg ">
-            <div class="text-center ">
-                <h2><i class="bi bi-person-circle"></i> About Me</h2>
-
             </div>
+        </section>
 
-            <div class="row justify-content-between my-5 ">
-                <div class="col-md-5 col-lg-6"><br><br><br>
-                    <div class="text-center">
-                        <p> Hello there, It is nice to meet you. I am Stephen. I am very passionate about technology and I enjoy taking on challenges.</p>
+
+
+
+
+
+
+
+
+        </section>
+        <!-- End Intersts Section -->
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>About</h2>
+
+                </div>
+
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-lg-6">
+                        <span class="tt" data-bs-placement="bottom" title="A smile a day keeps negativity at bay">
+                <img src="https://media.licdn.com/dms/image/C5603AQGlIQOlCy-zKQ/profile-displayphoto-shrink_800_800/0/1586964376039?e=1696464000&v=beta&t=6wYQlOwxo2Pm3Zy6cwKmj4VddmSzbnqWWhymDeb0jW8" class="img-fluid" alt="">
+                </span>
+                    </div>
+
+                    <div class="col-lg-6 justify-content-center align-items-center">
+                        <h3 style="text-align:center">Software Engineer &amp; Analytics Developer</h3>
+                        <p>Hello there, It is nice to meet you. I am Stephen. I am very passionate about technology and I enjoy taking on challenges.</p>
                         <p> I studied Computer Science and Computing at <a style="text-decoration:none" target="_blank" href="https://bowen.edu.ng/">Bowen University</a> and <a style="text-decoration:none" target="_blank" href="https://www.tees.ac.uk/">Teesside University</a>                            respectively. I enjoy coding, football, music and long walks . </p>
-
-
-
                     </div>
                 </div>
 
-                <div class="col-md-5 col-lg-6">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img img-fluid" src="https://www.andriivolotskov.tech/wp-content/uploads/2023/04/desktop0020-1870x770.jpg" alt="Card image">
-                        <div class="card-img-overlay ">
-                            <h5 class="card-title text-center"><i class="bi bi-braces"></i>Technical Skills</h5>
-                            <ul style="text-align:right; list-style-type: none;" class="display-7">
-                                <li> HTML,CSS,Javascript </li>
-                                <li>Jquery,React,Bootstrap</li>
-                                <li>Node.js</li>
-                                <li>Python,Flask,Django</li>
-                                <li>PHP,Laravel</li>
-                                <li>SQL,PostgresSQL,MySQL</li>
-                                <li>IBM cloud,GCP</li>
-                            </ul>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <br><br>
+        <section id="skills" class="skills section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Skills</h2>
+                    <p>One of the most captivating aspects of a Full Stack Engineer's journey is their relentless pursuit of knowledge. Driven by curiosity and a passion for continuous learning, they thrive in an ever-changing environment, embracing new
+                        technologies and methodologies with enthusiasm. Their thirst for knowledge fuels their ability to stay ahead of the curve, adapting swiftly to the emerging trends in the tech world.</p>
+                </div>
+
+                <div class="row skills-content">
+
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill">HTML <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
+
+                        <div class="progress">
+                            <span class="skill">CSS <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">JavaScript <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Python,Django,Flask <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">React,Bootstrap <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">React native <i class="val">70%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+
                     </div>
 
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill">PHP,Laravel <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="progress">
+                            <span class="skill">Jquery <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">Node.js <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">GCP, IBM Cloud <i class="val">85%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">SQL,PostgresSQL,MySQL <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill">NoSQL,MongoDB <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
+        </section>
+        <!-- End Skills Section -->
+
+        <!-- ======= Offcanvas Section ======= -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+            <div class="offcanvas-header bg-dark pt-5 pb-1 ">
+                <h5 class="offcanvas-title text-align-center" id="sidebar-label" style="color:dodgerblue; text-align:center;"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-muted text-black"> <br>
+                <a style="text-decoration:none" target="_blank" href="https://github.com/Stephen0111">
+                    <h5 style="color:black; text-align:center;"><i class="bi bi-github"></i>Github</h5>
+                </a>
+                <br>
+                <a style="text-decoration:none" target="_blank" href="https://www.linkedin.com/in/stephen-adegbile-663537138/">
+                    <h5 style="color:black; text-align:center;"><i class="bi bi-linkedin"></i> Linkedln</h5>
+                </a>
+                <br>
+                <a style="text-decoration:none" target="_blank" href="https://www.facebook.com/stephen.adegbile1/">
+                    <h5 style="color:black; text-align:center;"><i class="bi bi-facebook"></i> Facebook</h5>
+                </a>
+                <br>
+                <a style="text-decoration:none" target="_blank" href="https://twitter.com/Bazon___">
+                    <h5 style="color:black; text-align:center;"><i class="bi bi-twitter"></i> Twitter</h5>
+                </a>
+                <br>
+                <a style="text-decoration:none" target="_blank" href="mailto:stephen@stephenadegbile.uk">
+                    <h5 style="color: black; text-align:center;"><i class="bi bi-envelope-fill"></i> Email</h5>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- End Offcanvas section Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <br><br>
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container justify-content-around" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Mini Projects</h2>
+                    <p>Check out some of my work.</p>
+                </div>
+
+
+
+                <div class="row portfolio-container justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-3 col-md-6 portfolio-item ">
+                        <div class="portfolio-wrap">
+                            <img src="https://i.ytimg.com/vi/C3H5pQEmurs/maxresdefault.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <a href="https://stephen0111.github.io/Product_Landing_page/" target="_blank" class="btn btn-muted text-justify stretched-link"></a>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="https://physicsworld.com/wp-content/uploads/2023/04/2023-04-Transactions-quantum-computer-CPU-concept-1346925522-iStock_Olemedia.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <a href=" https://stephen0111.github.io/technicaldocumentationpage/" target="_blank" class="btn btn-muted text-justify stretched-link"></a>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 portfolio-item ">
+                        <div class="portfolio-wrap">
+                            <img src="https://www.bestdigitalmate.com/wp-content/uploads/2022/04/survey.png" class="img-fluid" alt="">
+
+                        </div>
+                        <a href="https://stephen0111.github.io/surveyform/" target="_blank" class="btn btn-muted text-justify stretched-link"></a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 portfolio-item ">
+                        <div class="portfolio-wrap">
+                            <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/2D80/production/_107884611_turingnote.jpg" class="img-fluid" alt="">
+                        </div>
+
+
+                        <a href=" https://stephen0111.github.io/alanturing/" target="_blank" class="btn btn-muted text-justify stretched-link"></a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+        <!-- End Portfolio Section -->
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <br><br>
+    <section class="bg-dark text-center">
+        <footer>
+            <p style="color:aliceblue">&copy; <strong>2022 Stephen Adegbile</strong> </p>
+
+
+
+        </footer>
     </section>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
 
 
+    <!--  JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-
-
-
-
-    <!-- side panel / offcanvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
-        <div class="offcanvas-header bg-dark pt-5 pb-1 ">
-            <h5 class="offcanvas-title" id="sidebar-label" style="color:white;">Hello there! Please feel free to get in touch</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body bg-muted"> <br>
-            <a style="text-decoration:none" target="_blank" href="https://github.com/Stephen0111">
-                <h5 style="color: rgb(28, 9, 9); text-align:center;"><i class="bi bi-github"></i> Github</h5>
-            </a>
-            <br>
-            <a style="text-decoration:none" target="_blank" href="https://www.linkedin.com/in/stephen-adegbile-663537138/">
-                <h5 style="color: rgb(28, 9, 9); text-align:center;"><i class="bi bi-linkedin"></i> Linkedln</h5>
-            </a>
-            <br>
-            <a style="text-decoration:none" target="_blank" href="https://www.facebook.com/stephen.adegbile1/">
-                <h5 style="color: rgb(28, 9, 9); text-align:center;"><i class="bi bi-facebook"></i> Facebook</h5>
-            </a>
-            <br>
-            <a style="text-decoration:none" target="_blank" href="https://twitter.com/Bazon___">
-                <h5 style="color: rgb(28, 9, 9); text-align:center;"><i class="bi bi-twitter"></i> Twitter</h5>
-            </a>
-            <br>
-            <a style="text-decoration:none" target="_blank" href="mailto:stephen@stephenadegbile.uk">
-                <h5 style="color: rgb(28, 9, 9); text-align:center;"><i class="bi bi-envelope-fill"></i> Email</h5>
-            </a>
-
-        </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
-    <script>
-        const tooltips = document.querySelectorAll('.tt')
-        tooltips.forEach(t => {
-            new bootstrap.Tooltip(t)
-        })
-    </script>
 </body>
-
-
-<section class="bg-dark text-center">
-    <footer>
-        <p style="color:aliceblue">&copy; <strong>Stephen Adegbile</strong> </p>
-        <a style="text-decoration:none" target="_blank" href="mailto:stephen@stephenadegbile.uk">
-            <p style="color:aliceblue"><i class="bi bi-envelope-fill"></i></p>
-        </a>
-    </footer>
-</section>
 
 </html>
