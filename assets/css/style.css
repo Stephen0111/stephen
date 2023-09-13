@@ -1252,3 +1252,6 @@ section {
 #footer .credits {
     font-size: 13px;
 }
+.card:hover {
+    box-shadow: 20px 20px black;
+}
