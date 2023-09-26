@@ -6,7 +6,9 @@ footer {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
 }
-
+#portfolio{
+    display: none;
+}
 .nav-link {
     font-family: 'Special Elite', cursive;
 }
