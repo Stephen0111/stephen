@@ -15,6 +15,10 @@ footer {
     font-family: 'Source Code Pro', monospace;
 }
 
+#port2{
+    display:none;
+}
+
 #lead-3 {
   font-family: 'Source Code Pro', monospace;
     font-weight: 300;
