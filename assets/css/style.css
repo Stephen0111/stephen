@@ -72,7 +72,9 @@ footer {
     font-family: 'Source Code Pro', monospace;
 }
 
-
+#interests{
+    display: none !important;
+}
 #hero,
 #interests {
     padding-left: 0% !important;
